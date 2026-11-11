@@ -1,0 +1,24 @@
+{
+  "characters": [
+    {
+      "name": "Naruto",
+      "max_hp": 100, "max_chakra": 100,
+      "attack": 14, "defense": 8, "speed": 10,
+      "abilities": ["Attack", "Rasengan", "Shadow Clone", "Rest"]
+    },
+    {
+      "name": "Sasuke",
+      "max_hp": 95, "max_chakra": 90,
+      "attack": 15, "defense": 7, "speed": 12,
+      "abilities": ["Attack", "Chidori", "Fireball Jutsu", "Rest"]
+    }
+  ],
+  "abilities": {
+    "Attack":         {"damage": 10, "chakra_cost": 0,  "cooldown": 0, "effect": null,       "target": "enemy"},
+    "Rasengan":       {"damage": 30, "chakra_cost": 35, "cooldown": 2, "effect": null,       "target": "enemy"},
+    "Shadow Clone":   {"damage": 0,  "chakra_cost": 20, "cooldown": 3, "effect": "defense_up", "target": "self"},
+    "Chidori":        {"damage": 32, "chakra_cost": 38, "cooldown": 2, "effect": null,       "target": "enemy"},
+    "Fireball Jutsu": {"damage": 22, "chakra_cost": 25, "cooldown": 1, "effect": null,       "target": "enemy"},
+    "Rest":           {"damage": 0,  "chakra_cost": 0,  "cooldown": 0, "effect": "recover_chakra", "target": "self"}
+  }
+}
